@@ -7,8 +7,8 @@ type ConversionDescriptor = 'as-number' | 'as-string';
 
 const combine = (
     input1: Combinable,
-    input2: ConversionDescriptor,
-    resultConversionType: 'as-number' | 'as-string'
+    input2: Combinable,
+    resultConversionType: ConversionDescriptor
 ) => {
     let result;
     if (
